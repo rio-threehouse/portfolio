@@ -5,6 +5,10 @@ body {
   margin-bottom: 100px;
 }
 
+h4 {
+  margin-bottom: 0px;
+}
+
 nav {
   background: #fff;
 }
