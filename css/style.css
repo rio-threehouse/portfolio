@@ -16,8 +16,8 @@ nav {
 }
 
 .img {
-  width: 60%;
-  margin-bottom: 40px;
+  width: 90%;
+  margin: 20px 0;
 }
 
 dl {
@@ -26,4 +26,8 @@ dl {
 
 dd {
   margin-bottom: 5px;
+}
+
+.profile {
+  text-align: center;
 }
