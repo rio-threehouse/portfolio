@@ -35,3 +35,37 @@ dd {
 .profile {
   text-align: center;
 }
+
+/* カルーセル・インディケータ */
+.carousel-indicators {
+  bottom: -15px;
+}
+
+.carousel-indicators li {
+  border-color: #050505;
+}
+
+.carousel-indicators .active {
+  background: #050505;
+}
+
+/* カルーセル・コントローラ */
+.carousel-control {
+  color: #050505;
+}
+
+.carousel-control:hover {
+  color: #050505;
+}
+
+.carousel-control:active {
+  color: #050505;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
