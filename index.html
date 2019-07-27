@@ -6,9 +6,9 @@
     <title>Rio Sanka's portfolio</title>
     <!-- bootstrap読み込み -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -26,22 +26,142 @@
           <!-- works -->
           <h2 class="text-center">Works</h2>     
 
-          <!-- 自由学園報告会アンケート紹介 -->
+          <!-- Microposts紹介 -->
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
 
               <!-- タイトル -->
-              <h4>自由学園報告会アンケートアプリ</h4>
-              <div>2019.5~</div>
-              <div class="text-center">
-                  <img src="images/jiyu_top.png" alt="トップページ" class="img">
+              <h4>Microposts（twitterクローン）</h4>
+              <div>2019.4~ webアプリケーション</div>
+
+              <!-- カルーセル -->
+              <div id="micro_carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#micro_carousel" data-slide-to="0"></li>
+                  <li data-target="#micro_carousel" data-slide-to="1"></li>
+                  <li data-target="#micro_carousel" data-slide-to="2"></li>
+                  <li data-target="#micro_carousel" data-slide-to="3"></li>
+                  <li data-target="#micro_carousel" data-slide-to="4"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/micro_top.png" alt="トップページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/micro_user.png" alt="ユーザページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/micro_users.png" alt="ユーザ一覧" class="img">
+                  </div>
+                  <div class="item">
+                      <img src="images/micro_post.png" alt="投稿" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/micro_comment.png" alt="コメント" class="img">
+                  </div>
+                </div>
+
+                <a class="left carousel-control" href="#micro_carousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">前へ</span>
+                </a>
+                <a class="right carousel-control" href="#micro_carousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">次へ</span>
+                </a>
               </div>
               
               <!-- 詳細 -->
               <div class="row">
                 <dl class="col-sm-3">
                   <dt>アプリ名</dt>
-                  <dd>自由学園報告会<br>アンケートアプリ</dd>
+                  <dd>Microposts</dd>
+                  <dt>開発開始</dt>
+                  <dd>2019.4</dd>
+                  <dt>担当範囲</dt>
+                  <dd>すべて</dd>
+                </dl>
+                <dl class="col-sm-9">
+                  <dt>説明</dt>
+                  <dd>twitterにある機能を自分の力で実装することを目的に作成したアプリです。</dd>
+                  <dt>機能</dt>
+                  <dd>ログイン / 投稿 / 投稿に対するコメント / フォロー / いいね</dd>
+                  <dt>技術・使用ソフト</dt>
+                  <dd>Ruby on Rails / Ruby / html / css / bootstrap / git</dd>
+                  <dt>URL</dt>
+                  <dd>
+                    <a href="https://micropost-threehouse.herokuapp.com/" target="_blank">https://micropost-threehouse.herokuapp.com</a>
+                    <br>
+                    <small>※ゲストとしてログインできます<br>メールアドレス：guest@guest.guest<br>パスワード：guest</small>
+                  </dd>
+                  <dt>GitHub</dt>
+                  <dd><a href="https://github.com/rio-threehouse/first_app_micropost" target="_blank">https://github.com/rio-threehouse/first_app_micropost</a></dd>
+                </dl>
+              </div> 
+
+            </div>  
+          </div> 
+
+          <!-- 自由学園報告会アンケート紹介 -->
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+
+              <!-- タイトル -->
+              <h4>自由学園報告会アンケート</h4>
+              <div>2019.5~ webアプリケーション</div>
+
+              <!-- カルーセル -->
+              <div id="jiyu_carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#jiyu_carousel" data-slide-to="0"></li>
+                  <li data-target="#jiyu_carousel" data-slide-to="1"></li>
+                  <li data-target="#jiyu_carousel" data-slide-to="2"></li>
+                  <li data-target="#jiyu_carousel" data-slide-to="3"></li>
+                  <li data-target="#jiyu_carousel" data-slide-to="4"></li>
+                  <li data-target="#jiyu_carousel" data-slide-to="5"></li>
+                  <li data-target="#jiyu_carousel" data-slide-to="6"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/jiyu_top.png" alt="トップページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/jiyu_main.png" alt="報告会一覧ページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/jiyu_present.png" alt="報告内容一覧ページ" class="img">
+                  </div>
+                  <div class="item">
+                      <img src="images/jiyu_form.png" alt="アンケートの作成" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/jiyu_form2.png" alt="アンケートの回答ページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/jiyu_mypage.png" alt="マイページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/jiyu_owner.png" alt="アンケート集計ページ" class="img">
+                  </div>
+                </div>
+
+                <a class="left carousel-control" href="#jiyu_carousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">前へ</span>
+                </a>
+                <a class="right carousel-control" href="#jiyu_carousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">次へ</span>
+                </a>
+              </div>
+              
+              <!-- 詳細 -->
+              <div class="row">
+                <dl class="col-sm-3">
+                  <dt>アプリ名</dt>
+                  <dd>自由学園報告会<br>アンケート</dd>
                   <dt>開発開始</dt>
                   <dd>2019.5</dd>
                   <dt>担当範囲</dt>
@@ -63,45 +183,6 @@
 
             </div>
           </div>
-
-          <!-- Microposts紹介 -->
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-
-              <!-- タイトル -->
-              <h4>Microposts（twitterクローン）</h4>
-              <div>2019.4~</div>
-              <div class="text-center">
-                <img src="images/user_page.png" alt="トップページ" class="img">
-              </div>
-              
-              <!-- 詳細 -->
-              <div class="row">
-                <dl class="col-sm-3">
-                  <dt>アプリ名</dt>
-                  <dd>Microposts</dd>
-                  <dt>開発開始</dt>
-                  <dd>2019.4</dd>
-                  <dt>担当範囲</dt>
-                  <dd>すべて</dd>
-                </dl>
-                <dl class="col-sm-9">
-                  <dt>説明</dt>
-                  <dd>twitterにある機能を自分の力で実装することを目的に作成したアプリです。</dd>
-                  <dt>機能</dt>
-                  <dd>ログイン / 投稿 / 投稿に対するコメント / フォロー / いいね</dd>
-                  <dt>技術・使用ソフト</dt>
-                  <dd>Ruby on Rails / Ruby / html / css / bootstrap / git</dd>
-                  <dt>URL</dt>
-                  <dd><a href="https://micropost-threehouse.herokuapp.com/" target="_blank">https://micropost-threehouse.herokuapp.com</a></dd>
-                  <dt>GitHub</dt>
-                  <dd><a href="https://github.com/rio-threehouse/first_app_micropost" target="_blank">https://github.com/rio-threehouse/first_app_micropost</a></dd>
-                </dl>
-              </div> 
-
-            </div>  
-          </div> 
-      
           <!-- profile -->
           <div class="text-center">
             <h2>About me</h2>
