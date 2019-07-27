@@ -21,7 +21,7 @@ nav {
 
 .img {
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0 30px 0;
 }
 
 dl {
@@ -38,28 +38,32 @@ dd {
 
 /* カルーセル・インディケータ */
 .carousel-indicators {
-  bottom: -15px;
+  bottom: -5px;
 }
 
 .carousel-indicators li {
-  border-color: #050505;
+  border-color: #613f18;
 }
 
 .carousel-indicators .active {
-  background: #050505;
+  background: #613f18;
 }
 
 /* カルーセル・コントローラ */
 .carousel-control {
-  color: #050505;
+  color: #613f18;
+}
+
+.carousel-control:link {
+  color: #613f18;
+}
+
+.carousel-control:visited {
+  color: #613f18;
 }
 
 .carousel-control:hover {
-  color: #050505;
-}
-
-.carousel-control:active {
-  color: #050505;
+  color: #613f18;
 }
 
 .carousel-control.right {
